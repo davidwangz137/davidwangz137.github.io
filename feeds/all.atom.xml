@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Dedalus Dreams</title><link href="https://davidwangz137.github.io/" rel="alternate"></link><link href="https://davidwangz137.github.io/feeds/all.atom.xml" rel="self"></link><id>https://davidwangz137.github.io/</id><updated>2016-11-19T08:11:00+01:00</updated><entry><title>Small Inefficiencies</title><link href="https://davidwangz137.github.io/small-inefficiencies.html" rel="alternate"></link><published>2016-11-19T08:11:00+01:00</published><updated>2016-11-19T08:11:00+01:00</updated><author><name>Zhiyuan Wang</name></author><id>tag:davidwangz137.github.io,2016-11-19:small-inefficiencies.html</id><summary type="html">&lt;p&gt;I notice that throughout the day there are periods where my concentration slips and I cannot focus very well. I believe that during these times I should rest in order to recover my energy but I don't. There are periods of being slightly tired and so I've gotten used to pushing forwards until my focus comes back. But when I've actually become fatigued this leads to somewhat terrible time sink of me trying to do something but due to my lack of energy for the whole time it proceeds at half or even slower rate than what I'd have if I could focus.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Dedalus Dreams</title><link href="https://davidwangz137.github.io/" rel="alternate"></link><link href="https://davidwangz137.github.io/feeds/all.atom.xml" rel="self"></link><id>https://davidwangz137.github.io/</id><updated>2016-11-19T09:53:00+01:00</updated><entry><title>Keeping myself sharp</title><link href="https://davidwangz137.github.io/keeping-myself-sharp.html" rel="alternate"></link><published>2016-11-19T09:53:00+01:00</published><updated>2016-11-19T09:53:00+01:00</updated><author><name>Zhiyuan Wang</name></author><id>tag:davidwangz137.github.io,2016-11-19:keeping-myself-sharp.html</id><summary type="html">&lt;p&gt;Over the terms my programming ability has fluctuated going into study terms and then coop and then back. I feel like on study terms my code is more "academic" and consists of one-off hacks to get things working without thinking much of what happens later. When I'm working I think carefully about what I write and refactor as I go. Being a junior developer my code still looks like spaghetti and I believe I need to write more in order to get a "feel" for what works and doesn't.&lt;/p&gt;
+&lt;p&gt;Before I go to Disney Research for my internship I want to get familiar with pandas, scikit-learn, some DL learning library (Tensorflow?) and STAN. I'm not sure how I want to do this though. I could compete on Kaggle. Or I could try one of the graduate ML courses online which require coding, but those are just academic hacks and really most of the problem is just thinking things through.&lt;/p&gt;
+&lt;p&gt;I guess I can try to replicate a paper's results like &lt;a href="https://www.tensorflow.org/versions/r0.11/tutorials/seq2seq/index.html#sequence-to-sequence-models"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But then I want a computer with a GPU so this doesn't take forever to run. But I can't get a good deal on a laptop before I get to the US since my stipend doesn't arrive until then. Might be time to make a risky decision, but I'd rather wait until the time of best savings.&lt;/p&gt;</summary></entry><entry><title>Mathematical Crossroads</title><link href="https://davidwangz137.github.io/mathematical-crossroads.html" rel="alternate"></link><published>2016-11-19T09:04:00+01:00</published><updated>2016-11-19T09:04:00+01:00</updated><author><name>Zhiyuan Wang</name></author><id>tag:davidwangz137.github.io,2016-11-19:mathematical-crossroads.html</id><summary type="html">&lt;p&gt;I'm currently at a crossroads with regards to my education. I want to venture further into the field of machine learning which requires skill in continuous mathematics. But my love is for mathematics such as graph theory and discrete optimization. Maybe this is just a temporary infatuation and once I get into the functional analysis and algebraic topology I will forget myself once again.&lt;/p&gt;
+&lt;p&gt;I've been eyeing Edelsbrunners "Computational Topology" but I feel my algebra and topology is too weak. Then I'll have to tackle differential geometry to understand things like natural gradients. Really the mathematics leans continuous.&lt;/p&gt;
+&lt;p&gt;But I'm prepared to make the long journey. I mean, I'm going to be a researcher so improving my knowledge and the ability to apply it will only make stronger.&lt;/p&gt;
+&lt;p&gt;But I've come to appreciate the following polytope:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$x(\delta(v)) = 1 \quad \forall v \in V$$&lt;/div&gt;
+&lt;div class="math"&gt;$$x(\delta(S)) \geq 1 \quad \forall S \subsetneq V, |S| \geq 3, |S|\&amp;gt;\text{odd}$$&lt;/div&gt;
+&lt;div class="math"&gt;$$x_e \geq 0 \quad \forall e \in E$$&lt;/div&gt;
+&lt;p&gt;This describes the convex hull of all perfect matchings on &lt;span class="math"&gt;\(G = (V,E)\)&lt;/span&gt;. This and its dual (given an objective vector &lt;span class="math"&gt;\(w\)&lt;/span&gt;) give great intuition for understanding Edmond's Blossom algorithm for general weighted matching where changing the value of the dual variables correspond to shrinking and unshrinking of nodes. I still have to read through the textbook for all the full details (but then I can be reading other books).&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary></entry><entry><title>Small Inefficiencies</title><link href="https://davidwangz137.github.io/small-inefficiencies.html" rel="alternate"></link><published>2016-11-19T08:11:00+01:00</published><updated>2016-11-19T08:11:00+01:00</updated><author><name>Zhiyuan Wang</name></author><id>tag:davidwangz137.github.io,2016-11-19:small-inefficiencies.html</id><summary type="html">&lt;p&gt;I notice that throughout the day there are periods where my concentration slips and I cannot focus very well. I believe that during these times I should rest in order to recover my energy but I don't. There are periods of being slightly tired and so I've gotten used to pushing forwards until my focus comes back. But when I've actually become fatigued this leads to somewhat terrible time sink of me trying to do something but due to my lack of energy for the whole time it proceeds at half or even slower rate than what I'd have if I could focus.&lt;/p&gt;
 &lt;p&gt;I wish I could have a better awareness of my mental state. The problem that occurs for detecting lack of energy is that you need to ping for your energy level but if you have low energy then you may forget to ping and then you get into the time sinkhole.&lt;/p&gt;
 &lt;p&gt;I spend some good amount of time worrying about things as well. Some of the things I worry about are unboundable and really if they happen then it just sucks. I can only live life in a way that minimizes risk. Because I didn't have a good awareness and desire to think about the situation I was in I lost many opportunities and performed quite suboptimally. I believe a stronger situational awareness would have helped me mitigate these problems. So now I prepare, but I still have to find a good balance for how much energy I should spend towards this. There are many rewards for being situationally aware such as the ability to capitalize on opportunities. I don't recall any opportunities that I have cashed in on due to heightened awareness though I'll now try to be more aware and see if I get any positive results. If so, then this would be good motivation. I don't want to drop my guard since everything seems to be going well and then get rekt.&lt;/p&gt;</summary></entry><entry><title>Reading other People's blogs</title><link href="https://davidwangz137.github.io/reading-other-peoples-blogs.html" rel="alternate"></link><published>2016-11-18T10:33:00+01:00</published><updated>2016-11-18T10:33:00+01:00</updated><author><name>Zhiyuan Wang</name></author><id>tag:davidwangz137.github.io,2016-11-18:reading-other-peoples-blogs.html</id><summary type="html">&lt;p&gt;I've started reading more blogs in order to find out what would be good content for me to put and not create posts which are copies or worse (like Pareto efficient worse) than the posts which currently exist on the internet. I believe it is much better to link those posts. The effects of writing the exact same post can be done better by other means. For example if I have an opinion on a topic and was going to write almost point for point the same post that somebody else had on the topic, it might be better for me to link to the post and hae commentary to specific points and built upon the arguments made. This allows me to refer back to the original post as a reference but also have my own post for my own viewpoint and why I feel that way (my intuition). After all, creating things is very energy intensive. If it is already there then finding a way to use it so that it becomes a part of your intuition (though probably not as much as if you derived it yourself, but still deep enough that you can apply it well) doesn't take up as much effort.&lt;/p&gt;
 &lt;p&gt;Also by reading other blogs I get a sense for what things are good to post. I see some posts which make me cringe and I would rather not post things like those (or too many. This post is pretty cringe-worthy currently).&lt;/p&gt;</summary></entry><entry><title>Planning Time</title><link href="https://davidwangz137.github.io/planning-time.html" rel="alternate"></link><published>2016-11-17T09:22:00+01:00</published><updated>2016-11-17T09:22:00+01:00</updated><author><name>Zhiyuan Wang</name></author><id>tag:davidwangz137.github.io,2016-11-17:planning-time.html</id><summary type="html">&lt;p&gt;I created this blog to keep me motivated to work hard. By letting everyone see what I've accomplished so far they can fit a local curve to where I should be in some short but significant time interval. Then I will feel some pressure to meet their expectations and become better. If I do become worse, then I can see this in evidence and then try to make things better instead of being in denial ("its not THAT bad"). Though some of the things I do will be risky and not yield any outcome for a long while (and may not even do anything in the end), by exposing them explicitly I won't forget why I'm doing them and how I calculated the reward/risk which let me take the decision.&lt;/p&gt;

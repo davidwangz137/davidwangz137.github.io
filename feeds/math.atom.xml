@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Dedalus Dreams</title><link href="https://davidwangz137.github.io/" rel="alternate"></link><link href="https://davidwangz137.github.io/feeds/math.atom.xml" rel="self"></link><id>https://davidwangz137.github.io/</id><updated>2016-11-19T09:04:00+01:00</updated><entry><title>Mathematical Crossroads</title><link href="https://davidwangz137.github.io/mathematical-crossroads.html" rel="alternate"></link><published>2016-11-19T09:04:00+01:00</published><updated>2016-11-19T09:04:00+01:00</updated><author><name>Zhiyuan Wang</name></author><id>tag:davidwangz137.github.io,2016-11-19:mathematical-crossroads.html</id><summary type="html">&lt;p&gt;I'm currently at a crossroads with regards to my education. I want to venture further into the field of machine learning which requires skill in continuous mathematics. But my love is for mathematics such as graph theory and discrete optimization. Maybe this is just a temporary infatuation and once I get into the functional analysis and algebraic topology I will forget myself once again.&lt;/p&gt;
+&lt;p&gt;I've been eyeing Edelsbrunners "Computational Topology" but I feel my algebra and topology is too weak. Then I'll have to tackle differential geometry to understand things like natural gradients. Really the mathematics leans continuous.&lt;/p&gt;
+&lt;p&gt;But I'm prepared to make the long journey. I mean, I'm going to be a researcher so improving my knowledge and the ability to apply it will only make stronger.&lt;/p&gt;
+&lt;p&gt;But I've come to appreciate the following polytope:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$x(\delta(v)) = 1 \quad \forall v \in V$$&lt;/div&gt;
+&lt;div class="math"&gt;$$x(\delta(S)) \geq 1 \quad \forall S \subsetneq V, |S| \geq 3, |S|\&amp;gt;\text{odd}$$&lt;/div&gt;
+&lt;div class="math"&gt;$$x_e \geq 0 \quad \forall e \in E$$&lt;/div&gt;
+&lt;p&gt;This describes the convex hull of all perfect matchings on &lt;span class="math"&gt;\(G = (V,E)\)&lt;/span&gt;. This and its dual (given an objective vector &lt;span class="math"&gt;\(w\)&lt;/span&gt;) give great intuition for understanding Edmond's Blossom algorithm for general weighted matching where changing the value of the dual variables correspond to shrinking and unshrinking of nodes. I still have to read through the textbook for all the full details (but then I can be reading other books).&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary></entry></feed>

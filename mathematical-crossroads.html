@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Mathematical Crossroads</title>
+        <link rel="stylesheet" href="https://davidwangz137.github.io/theme/css/main.css" />
+        <link href="https://davidwangz137.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Dedalus Dreams Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://davidwangz137.github.io/">Dedalus Dreams </a></h1>
+                <nav><ul>
+                    <li><a href="https://davidwangz137.github.io/category/experimental.html">Experimental</a></li>
+                    <li class="active"><a href="https://davidwangz137.github.io/category/math.html">Math</a></li>
+                    <li><a href="https://davidwangz137.github.io/category/productivity.html">Productivity</a></li>
+                    <li><a href="https://davidwangz137.github.io/category/programming.html">Programming</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://davidwangz137.github.io/mathematical-crossroads.html" rel="bookmark"
+           title="Permalink to Mathematical Crossroads">Mathematical Crossroads</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-11-19T09:04:00+01:00">
+                Published: Sat 19 November 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://davidwangz137.github.io/author/zhiyuan-wang.html">Zhiyuan Wang</a>
+        </address>
+<p>In <a href="https://davidwangz137.github.io/category/math.html">Math</a>.</p>
+
+</footer><!-- /.post-info -->      <p>I'm currently at a crossroads with regards to my education. I want to venture further into the field of machine learning which requires skill in continuous mathematics. But my love is for mathematics such as graph theory and discrete optimization. Maybe this is just a temporary infatuation and once I get into the functional analysis and algebraic topology I will forget myself once again.</p>
+<p>I've been eyeing Edelsbrunners "Computational Topology" but I feel my algebra and topology is too weak. Then I'll have to tackle differential geometry to understand things like natural gradients. Really the mathematics leans continuous.</p>
+<p>But I'm prepared to make the long journey. I mean, I'm going to be a researcher so improving my knowledge and the ability to apply it will only make stronger.</p>
+<p>But I've come to appreciate the following polytope:
+</p>
+<div class="math">$$x(\delta(v)) = 1 \quad \forall v \in V$$</div>
+<div class="math">$$x(\delta(S)) \geq 1 \quad \forall S \subsetneq V, |S| \geq 3, |S|\&gt;\text{odd}$$</div>
+<div class="math">$$x_e \geq 0 \quad \forall e \in E$$</div>
+<p>This describes the convex hull of all perfect matchings on <span class="math">\(G = (V,E)\)</span>. This and its dual (given an objective vector <span class="math">\(w\)</span>) give great intuition for understanding Edmond's Blossom algorithm for general weighted matching where changing the value of the dual variables correspond to shrinking and unshrinking of nodes. I still have to read through the textbook for all the full details (but then I can be reading other books).</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://davidwangz137.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
