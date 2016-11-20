@@ -38,7 +38,14 @@
 </footer><!-- /.post-info --><p>Over the terms my programming ability has fluctuated going into study terms and then coop and then back. I feel like on study terms my code is more "academic" and consists of one-off hacks to get things working without thinking much of what happens later. When I'm working I think carefully about what I write and refactor as I go. Being a junior developer my code still looks like spaghetti and I believe I need to write more in order to get a "feel" for what works and doesn't.</p>
 <p>Before I go to Disney Research for my internship I want to get familiar with pandas, scikit-learn, some DL learning library (Tensorflow?) and STAN. I'm not sure how I want to do this though. I could compete on Kaggle. Or I could try one of the graduate ML courses online which require coding, but those are just academic hacks and really most of the problem is just thinking things through.</p>
 <p>I guess I can try to replicate a paper's results like <a href="https://www.tensorflow.org/versions/r0.11/tutorials/seq2seq/index.html#sequence-to-sequence-models">here</a></p>
-<p>But then I want a computer with a GPU so this doesn't take forever to run. But I can't get a good deal on a laptop before I get to the US since my stipend doesn't arrive until then. Might be time to make a risky decision, but I'd rather wait until the time of best savings.</p>                </article>
+<p>But then I want a computer with a GPU so this doesn't take forever to run. But I can't get a good deal on a laptop before I get to the US since my stipend doesn't arrive until then. Might be time to make a risky decision, but I'd rather wait until the time of best savings.</p>
+<p>I really don't want this to take a day:</p>
+<div class="highlight"><pre><span></span>    <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">batch_x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">batch_y</span><span class="p">,</span>
+                                   <span class="n">seqlen</span><span class="p">:</span> <span class="n">batch_seqlen</span><span class="p">})</span>
+</pre></div>
+
+
+<p>But if it would take a day then with a GPU it would take an hour. That is fine. Then I can prepare visualization scripts or start coding up the next segment. But a day turnover will severly limit the number of experiments that I can perform.</p>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">
